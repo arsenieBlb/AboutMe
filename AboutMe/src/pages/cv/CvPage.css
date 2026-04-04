@@ -1,0 +1,127 @@
+.cv-page {
+  padding: 24px 2% 32px;
+}
+
+.cv-container {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) 2fr;
+  gap: 40px;
+  width: 96%;
+  margin: 3% auto;
+  border-radius: 2%;
+  box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cv-sidebar {
+  background-color: #323b4c;
+  border-bottom-left-radius: 2%;
+  border-top-left-radius: 2%;
+}
+
+.cv-profile {
+  width: 60%;
+  margin: 10% auto;
+  color: #ffffff;
+}
+
+.cv-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.cv-photo img {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.cv-name {
+  text-align: center;
+}
+
+.cv-section {
+  margin: 15% 0;
+}
+
+.cv-main {
+  margin: 3%;
+}
+
+.cv-main h2,
+.cv-main p,
+.cv-main li {
+  color: #323b4c;
+}
+
+.cv-experience-list {
+  display: grid;
+  gap: 20px;
+}
+
+.cv-experience-item {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) 2fr;
+}
+
+.cv-meta,
+.cv-details,
+.cv-education-item {
+  margin: 0 10%;
+}
+
+.cv-company {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cv-details ul {
+  padding-left: 18px;
+}
+
+.cv-education-list {
+  display: grid;
+  gap: 12px;
+}
+
+.cv-education-item {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) 2fr;
+}
+
+.cv-volunteer h2 {
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+    box-shadow: none;
+  }
+
+  .cv-sidebar {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 2%;
+  }
+
+  .cv-profile {
+    width: 85%;
+    margin: 10% auto;
+  }
+
+  .cv-main {
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.4);
+    padding: 20px;
+  }
+
+  .cv-section {
+    text-align: center;
+    margin: 10% 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cv-experience-item,
+  .cv-education-item {
+    grid-template-columns: 1fr;
+  }
+}
