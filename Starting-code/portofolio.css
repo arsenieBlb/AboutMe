@@ -1,0 +1,146 @@
+body{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar{
+    text-align: center;
+    padding: 12px;
+    flex: 1;
+    
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: relative;
+    color: black;
+}
+.navbar a:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    background: #ff0000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.intro{
+    height: 80vh;              
+    display: flex;              
+    justify-content: center;     
+    align-items: center;
+}
+.intro p {
+    font-size: 110px;
+    font-family: "Brush Script MT"
+}
+.projects{
+    display: flex;              
+    justify-content: center;     
+    align-items: center;
+}
+.projects p{
+    font-size: 70px;
+    font-family: "Brush Script MT"
+}
+.project{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 80px;
+    margin: 8%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.project1, .project2, .project3{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex: 1;
+    flex-basis: 30%;
+}
+
+.project4, .project5{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex-basis: 30%; 
+}
+
+h1{
+    text-align: center;
+}
+.project1 p, .project2 p, .project3 p, .project4, .project5 p {
+    padding: 30px;
+    padding-top: 0px;
+    
+}
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover{
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.6);
+    
+}
+
+
+@media screen and ( max-width: 2000px) {
+
+    .project1, .project2, .project3{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex: 1;
+    flex-basis: 25%;
+}
+
+.project4, .project5{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex-basis: 25%; 
+}
+}
+
+@media screen and ( max-width: 1024px) {
+    .intro p{
+    font-size: 80px;
+}
+    .project1, .project2{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex-basis: 34%;
+}
+
+.project3, .project4{
+    
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex-basis: 34%; 
+    
+}
+.project5{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex-basis: 50%; 
+}
+}
+
+@media screen and ( max-width: 700px) {
+    .intro p{
+    font-size: 53px;
+}
+.intro{
+    height: 60vh;
+}
+.projects p{
+    font-size: 45px;
+}
+    .project1, .project2, .project3, .project4, .project5{
+    border-radius: 10px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    flex-basis: 100%;
+}
+
+}
