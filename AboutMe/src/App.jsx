@@ -17,6 +17,7 @@ function getCurrentPage() {
 
 function App() {
   const [page, setPage] = useState(getCurrentPage);
+  const showSharedChrome = page !== 'about';
 
   useEffect(() => {
     const syncPage = () => setPage(getCurrentPage());
@@ -34,8 +35,8 @@ function App() {
 
   return (
     <div className="app-shell">
-      <NavBar currentPage={page} />
-      <hr className="page-divider" />
+      {showSharedChrome ? <NavBar currentPage={page} /> : null}
+      {showSharedChrome ? <hr className="page-divider" /> : null}
 
       {page === 'cv' ? <CvPage /> : null}
       {page === 'portfolio' ? <PortfolioPage /> : null}
