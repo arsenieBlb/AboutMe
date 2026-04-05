@@ -4,7 +4,6 @@ export function HeroSection() {
       <div className="about-hero-shape" aria-hidden="true" />
 
       <div className="about-hero-content">
-        <p className="about-hero-eyebrow">Software Engineering Student &amp; IT Professional</p>
         <h1>
           Arsenie
           <br />
@@ -15,7 +14,9 @@ export function HeroSection() {
           <br />
           Turning logic into solutions, one layer at a time.
         </p>
-        <p className="about-hero-quote">&quot;Great systems aren&apos;t born - they&apos;re engineered.&quot;</p>
+        <p className="about-hero-quote">
+          &ldquo;Great systems aren&apos;t born - they&apos;re engineered.&rdquo;
+        </p>
       </div>
     </section>
   );

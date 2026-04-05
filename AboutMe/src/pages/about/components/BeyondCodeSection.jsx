@@ -1,5 +1,6 @@
 import { passionItems } from '../aboutContent';
-import { ChessBoard } from './ChessBoard';
+import { ScrollRevealGroup } from './ScrollRevealGroup';
+import portraitPhoto from '../../../assets/photo.jpg';
 
 export function BeyondCodeSection() {
   return (
@@ -22,18 +23,20 @@ export function BeyondCodeSection() {
             </p>
           </div>
 
-          <ChessBoard />
+          <div className="about-chess-photo">
+            <img src={portraitPhoto} alt="Arsenie Bilba" loading="lazy" />
+          </div>
         </div>
 
-        <div className="about-why-passions">
+        <ScrollRevealGroup className="about-why-passions">
           {passionItems.map((item) => (
-            <div className="about-passion-item" key={item.number}>
+            <div className="about-passion-item about-reveal-card" key={item.number} data-reveal-item>
               <p className="about-passion-num">{item.number}</p>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
           ))}
-        </div>
+        </ScrollRevealGroup>
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ export function AboutNav() {
         </li>
       </ul>
 
-      <div className="about-nav-spacer" aria-hidden="true" />
+      <div aria-hidden="true" />
     </nav>
   );
 }
