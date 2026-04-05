@@ -1,6 +1,6 @@
 import { passionItems } from '../aboutContent';
 import { ScrollRevealGroup } from './ScrollRevealGroup';
-import portraitPhoto from '../../../assets/photo.jpg';
+import chessPhoto from '../../../assets/chess.webp';
 
 export function BeyondCodeSection() {
   return (
@@ -24,7 +24,7 @@ export function BeyondCodeSection() {
           </div>
 
           <div className="about-chess-photo">
-            <img src={portraitPhoto} alt="Arsenie Bilba" loading="lazy" />
+            <img src={chessPhoto} alt="Chess" loading="lazy" />
           </div>
         </div>
 

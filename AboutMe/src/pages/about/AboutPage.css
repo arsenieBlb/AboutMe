@@ -202,12 +202,15 @@
   position: sticky;
   top: 0;
   display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 100vh;
   grid-template-columns: 1fr 1.7fr;
   align-items: center;
   gap: 0;
   overflow: hidden;
-  padding: 0 80px 0 64px;
+  padding: 0;
 }
 
 .about-exp-left {
@@ -259,8 +262,8 @@
 
 .about-exp-cards-viewport {
   position: relative;
-  height: 70vh;
-  max-height: 600px;
+  height: 60vh;
+  max-height: 520px;
 }
 
 .about-exp-card {
@@ -370,7 +373,9 @@
 }
 
 .about-intro-inner {
-  max-width: 920px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-intro-inner .about-eyebrow {
@@ -378,6 +383,7 @@
 }
 
 .about-intro-quote {
+  max-width: 920px;
   margin-bottom: 48px;
   color: var(--about-text-dark);
   font-family: var(--about-font-display);
@@ -625,6 +631,7 @@
     position: static;
     height: auto;
     grid-template-columns: 1fr;
+    max-width: none;
   }
 
   .about-exp-left {
