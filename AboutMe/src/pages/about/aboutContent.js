@@ -79,16 +79,3 @@ export const techStack = [
   { name: 'TypeScript', src: `${ICON_CDN}/typescript/typescript-original.svg` },
   { name: 'SQL', src: `${ICON_CDN}/postgresql/postgresql-original.svg` },
 ];
-
-export const chessPosition = [
-  ['\u265C', '\u265E', '\u265D', '\u265B', '\u265A', '', '\u265E', '\u265C'],
-  ['\u265F', '\u265F', '\u265F', '', '\u265D', '\u265F', '\u265F', '\u265F'],
-  ['', '', '', '\u265F', '', '', '', ''],
-  ['', '', '', '', '\u265F', '', '', ''],
-  ['', '', '', '', '\u2659', '\u2659', '', ''],
-  ['', '', '\u2658', '', '', '', '', ''],
-  ['\u2659', '\u2659', '\u2659', '\u2659', '', '', '\u2659', '\u2659'],
-  ['\u2656', '', '\u2657', '\u2655', '\u2654', '\u2657', '', '\u2656'],
-];
-
-export const blackChessPieces = new Set(['\u265C', '\u265E', '\u265D', '\u265B', '\u265A', '\u265F']);
