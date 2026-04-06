@@ -17,7 +17,7 @@ function getCurrentPage() {
 
 function App() {
   const [page, setPage] = useState(getCurrentPage);
-  const showSharedChrome = page !== 'about';
+  const showSharedChrome = page === 'cv';
 
   useEffect(() => {
     const syncPage = () => setPage(getCurrentPage());
