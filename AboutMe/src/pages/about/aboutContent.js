@@ -1,5 +1,3 @@
-const ICON_CDN = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
-
 export const experienceCards = [
   {
     number: '01',
@@ -64,18 +62,4 @@ export const passionItems = [
     description:
       'Whether on a team project or working independently, I take ownership, adapt quickly, and bring consistent energy to everything I do. Growth is the goal, not comfort - and that mindset shows up in every challenge I take on.',
   },
-];
-
-export const techStack = [
-  { name: 'Java', src: `${ICON_CDN}/java/java-original.svg` },
-  { name: 'HTML', src: `${ICON_CDN}/html5/html5-original.svg` },
-  { name: 'CSS', src: `${ICON_CDN}/css3/css3-original.svg` },
-  { name: 'Python', src: `${ICON_CDN}/python/python-original.svg` },
-  { name: 'C++', src: `${ICON_CDN}/cplusplus/cplusplus-original.svg` },
-  { name: 'C#', src: `${ICON_CDN}/csharp/csharp-original.svg` },
-  { name: 'JavaScript', src: `${ICON_CDN}/javascript/javascript-original.svg` },
-  { name: 'React', src: `${ICON_CDN}/react/react-original.svg` },
-  { name: 'Node.js', src: `${ICON_CDN}/nodejs/nodejs-original.svg` },
-  { name: 'TypeScript', src: `${ICON_CDN}/typescript/typescript-original.svg` },
-  { name: 'SQL', src: `${ICON_CDN}/postgresql/postgresql-original.svg` },
 ];

@@ -4,7 +4,6 @@ import { AboutNav } from './components/AboutNav';
 import { BeyondCodeSection } from './components/BeyondCodeSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { HeroSection } from './components/HeroSection';
-import { TechSection } from './components/TechSection';
 import './AboutPage.css';
 
 export function AboutPage() {
@@ -15,7 +14,6 @@ export function AboutPage() {
       <ExperienceSection />
       <AboutIntroSection />
       <BeyondCodeSection />
-      <TechSection />
       <AboutFooter />
     </main>
   );
